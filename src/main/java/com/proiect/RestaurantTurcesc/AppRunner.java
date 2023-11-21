@@ -96,19 +96,7 @@ public class AppRunner implements ApplicationRunner {
             productList.add(new Product(43, "CALOIAN", 31.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
             productList.add(new Product(43, "CHARDONNAY", 33.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
             productList.add(new Product(43, "PURCARI ROSE", 28.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
-
-
-
-
-
-
-
-
-
-
-
-
-
+            productsRepository.saveAll(productList);
         }
 
     }
