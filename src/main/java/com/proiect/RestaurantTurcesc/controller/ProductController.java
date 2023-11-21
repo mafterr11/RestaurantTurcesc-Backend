@@ -1,6 +1,7 @@
 package com.proiect.RestaurantTurcesc.controller;
 
 import com.proiect.RestaurantTurcesc.exceptions.ErrorMessage;
+import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
 import com.proiect.RestaurantTurcesc.models.product.ProductRequest;
 import com.proiect.RestaurantTurcesc.models.product.ProductResponse;
 import com.proiect.RestaurantTurcesc.service.product.ProductsService;
@@ -38,6 +39,14 @@ public class ProductController {
         return new ResponseEntity<>(productsService.findAll(), HttpStatus.OK);
     }
 
+    @GetMapping("/category/{category}")
+    public ResponseEntity<List<ProductResponse>> getProductsByCategory(@PathVariable String category) {
+        CategoryEnum cat = CategoryEnum.valueOf(category);
+        return new ResponseEntity<>(productsService.findByCategory(cat), HttpStatus.OK);
+    }
+
+
+
     @GetMapping("/{id}")
     public ResponseEntity<?> getProductById(@PathVariable Integer id) {
         ProductResponse foundProduct = productsService.findById(id);
@@ -47,6 +56,8 @@ public class ProductController {
         ErrorMessage errorMessage = new ErrorMessage("Product not found");
         return new ResponseEntity<>(errorMessage, HttpStatus.NOT_FOUND);
     }
+
+
 
     @DeleteMapping("/deleteAll")
     public ResponseEntity deleteAll() {

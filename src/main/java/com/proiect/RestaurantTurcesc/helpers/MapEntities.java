@@ -1,8 +1,10 @@
 package com.proiect.RestaurantTurcesc.helpers;
 
+import com.proiect.RestaurantTurcesc.entities.Category;
 import com.proiect.RestaurantTurcesc.entities.Order;
 import com.proiect.RestaurantTurcesc.entities.Product;
 import com.proiect.RestaurantTurcesc.entities.User;
+import com.proiect.RestaurantTurcesc.models.category.CategoryResponse;
 import com.proiect.RestaurantTurcesc.models.order.OrderRequest;
 import com.proiect.RestaurantTurcesc.models.order.OrderResponse;
 import com.proiect.RestaurantTurcesc.models.product.ProductRequest;
@@ -76,6 +78,7 @@ public class MapEntities {
         product.setDescription(productRequest.getDescription());
         product.setPrice(productRequest.getPrice());
         product.setQuantity(productRequest.getQuantity());
+        product.setCategory(productRequest.getCategory());
         return product;
     }
 
@@ -86,6 +89,7 @@ public class MapEntities {
         productResponse.setDescription(product.getDescription());
         productResponse.setPrice(product.getPrice());
         productResponse.setQuantity(product.getQuantity());
+        productResponse.setCategory(product.getCategory());
         return productResponse;
     }
 
@@ -96,6 +100,14 @@ public class MapEntities {
         product.setPrice(productResponse.getPrice());
         product.setDescription(productResponse.getDescription());
         product.setQuantity(productResponse.getQuantity());
+        product.setCategory(productResponse.getCategory());
         return product;
+    }
+
+    public static CategoryResponse mapCategoryToCategoryResponse(Category category) {
+        CategoryResponse categoryResponse = new CategoryResponse();
+        categoryResponse.setId(category.getId());
+        categoryResponse.setCategory(category.getCategory());
+        return categoryResponse;
     }
 }

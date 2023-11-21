@@ -1,6 +1,6 @@
 package com.proiect.RestaurantTurcesc.entities;
 
-import com.proiect.RestaurantTurcesc.helpers.Category;
+import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -32,5 +32,7 @@ public class Product {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "category", columnDefinition = "TEXT", updatable = true, nullable = false)
-    private Category category;
+    private CategoryEnum category;
+
+
 }

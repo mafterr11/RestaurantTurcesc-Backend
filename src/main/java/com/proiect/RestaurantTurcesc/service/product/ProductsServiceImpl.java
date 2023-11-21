@@ -1,6 +1,7 @@
 package com.proiect.RestaurantTurcesc.service.product;
 
 import com.proiect.RestaurantTurcesc.entities.Product;
+import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
 import com.proiect.RestaurantTurcesc.helpers.MapEntities;
 import com.proiect.RestaurantTurcesc.models.product.ProductRequest;
 import com.proiect.RestaurantTurcesc.models.product.ProductResponse;
@@ -56,6 +57,12 @@ public class ProductsServiceImpl implements ProductsService {
             return MapEntities.mapProductToProductResponse(foundProduct.get());
         }
         return null;
+    }
+
+    @Override
+    public List<ProductResponse> findByCategory(CategoryEnum category) {
+        List<Product> foundProduct = this.productsRepository.findProductsByCategory(category);
+            return foundProduct.stream().map(p->MapEntities.mapProductToProductResponse(p)).toList();
     }
 
     @Override

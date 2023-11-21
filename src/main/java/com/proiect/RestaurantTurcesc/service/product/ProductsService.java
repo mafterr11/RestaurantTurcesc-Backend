@@ -1,5 +1,6 @@
 package com.proiect.RestaurantTurcesc.service.product;
 
+import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
 import com.proiect.RestaurantTurcesc.models.product.ProductRequest;
 import com.proiect.RestaurantTurcesc.models.product.ProductResponse;
 
@@ -16,6 +17,8 @@ public interface ProductsService {
     List<ProductResponse> findAll();
 
     ProductResponse findById(Integer id);
+
+    List<ProductResponse> findByCategory(CategoryEnum category);
 
     ProductResponse updateProduct(Integer id, ProductRequest productRequest);
 }
