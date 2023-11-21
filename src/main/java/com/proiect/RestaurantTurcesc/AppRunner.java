@@ -61,13 +61,50 @@ public class AppRunner implements ApplicationRunner {
             productList.add(new Product(17, "BULGUR PILAV", 32.0, "Bulgur, onion, tomatoes", (short)0, CategoryEnum.HOT_STARTERS));
 
 
-            productList.add(new Product(13, "LAHMACUN", 31.0, "Meat and vegetables", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "MANTAR GÜVEÇ", 22.0, "Gratinated mushrooms", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "ADANA KEBAP", 47.0, "Spicy beef and lamb kebab, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "URFA KEBAP", 55.0, "Beef and lamb kebab, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "ÇÖP ŞIŞ", 63.0, "Beef skewers, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "KÜŞLEME", 53.0, "Beef skewers, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
-            productList.add(new Product(13, "ISKENDER KEBAP", 47.0, "Beef, lamb, flatbread, tomato sauce", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(18, "LAHMACUN", 31.0, "Meat and vegetables", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(19, "MANTAR GÜVEÇ", 22.0, "Gratinated mushrooms", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(20, "ADANA KEBAP", 47.0, "Spicy beef and lamb kebab, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(21, "URFA KEBAP", 55.0, "Beef and lamb kebab, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(22, "ÇÖP ŞIŞ", 63.0, "Beef skewers, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(23, "KÜŞLEME", 53.0, "Beef skewers, vegetables, bulgur", (short)0, CategoryEnum.GRILL));
+            productList.add(new Product(24, "ISKENDER KEBAP", 47.0, "Beef, lamb, flatbread, tomato sauce", (short)0, CategoryEnum.GRILL));
+
+
+            productList.add(new Product(25, "KÜNEFE", 37.0, "Kataifi with cheese", (short)0, CategoryEnum.DESSERTS));
+            productList.add(new Product(26, "SÜTLAÇ", 34.0, "Rice pudding", (short)0, CategoryEnum.DESSERTS));
+            productList.add(new Product(27, "BAKLAVA", 35.0, "Pistachio baklava", (short)0, CategoryEnum.DESSERTS));
+            productList.add(new Product(28, "KATMER", 47.0, "Turkish dessert", (short)0, CategoryEnum.DESSERTS));
+
+            productList.add(new Product(29, "ESPRESSO", 20.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(30, "AMERICANO", 23.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(31, "ESPRESSO LATTE", 24.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(32, "FRAPPE", 26.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(33, "ICE COFFEE", 21.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(34, "TURKISH COFFEE", 20.0, "", (short)0, CategoryEnum.COFFEE));
+            productList.add(new Product(35, "TURKISH TEA", 17.0, "", (short)0, CategoryEnum.COFFEE));
+
+            productList.add(new Product(36, "PEPSI/COLA", 10.0, "classic, lime, zero", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(37, "FANTA", 10.0, "", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(38, "SPRITE", 10.0, "", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(39, "LIPTON PEACH", 10.0, "", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(40, "PRIGAT", 10.0, "Oranges, peaches, banana with strawberries", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(41, "STILL WATER", 8.0, "", (short)0, CategoryEnum.DRINKS));
+            productList.add(new Product(42, "MINERAL WATER", 8.0, "", (short)0, CategoryEnum.DRINKS));
+
+            productList.add(new Product(43, "CABERNET SAUVIGNON PREMIUM 14%", 34.0, "", (short)0, CategoryEnum.ALCOHOL));
+            productList.add(new Product(43, "WHITE RUSALCA 13%", 36.0, "Chardonnay, Sauvignon Blanc, Pinot Gris, Riesling Italian", (short)0, CategoryEnum.ALCOHOL));
+            productList.add(new Product(43, "CALOIAN", 31.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
+            productList.add(new Product(43, "CHARDONNAY", 33.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
+            productList.add(new Product(43, "PURCARI ROSE", 28.0, "Sauvignon Blanc 14%, Rose 13,5%, Merlot 14,5%", (short)0, CategoryEnum.ALCOHOL));
+
+
+
+
+
+
+
+
+
 
 
 
