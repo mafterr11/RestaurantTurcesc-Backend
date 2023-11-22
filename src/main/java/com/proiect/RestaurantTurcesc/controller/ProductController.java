@@ -58,7 +58,6 @@ public class ProductController {
     }
 
 
-
     @DeleteMapping("/deleteAll")
     public ResponseEntity deleteAll() {
         productsService.deleteAll();
