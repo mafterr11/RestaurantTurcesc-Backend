@@ -9,6 +9,5 @@ public interface AuthenticationService{
     AuthenticationResponse login(LoginRequest loginRequest);
 
     AuthenticationResponse register(RegisterRequest registerRequest);
-
 }
 

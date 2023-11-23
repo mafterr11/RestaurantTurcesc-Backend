@@ -1,6 +1,5 @@
 package com.proiect.RestaurantTurcesc.models.user;
 
-import com.proiect.RestaurantTurcesc.entities.Order;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

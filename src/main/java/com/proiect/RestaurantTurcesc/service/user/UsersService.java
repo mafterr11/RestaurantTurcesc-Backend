@@ -21,7 +21,6 @@ public interface UsersService {
     UserResponse updateUser(Integer id, UserRequest userRequest);
 
     UserResponse updateOrders(User user);
-
 }
 
 

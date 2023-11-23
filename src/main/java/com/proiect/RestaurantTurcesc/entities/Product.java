@@ -33,6 +33,4 @@ public class Product {
     @Enumerated(EnumType.STRING)
     @Column(name = "category", columnDefinition = "TEXT", updatable = true, nullable = false)
     private CategoryEnum category;
-
-
 }

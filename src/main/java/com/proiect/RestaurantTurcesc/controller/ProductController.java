@@ -45,8 +45,6 @@ public class ProductController {
         return new ResponseEntity<>(productsService.findByCategory(cat), HttpStatus.OK);
     }
 
-
-
     @GetMapping("/{id}")
     public ResponseEntity<?> getProductById(@PathVariable Integer id) {
         ProductResponse foundProduct = productsService.findById(id);
@@ -56,7 +54,6 @@ public class ProductController {
         ErrorMessage errorMessage = new ErrorMessage("Product not found");
         return new ResponseEntity<>(errorMessage, HttpStatus.NOT_FOUND);
     }
-
 
     @DeleteMapping("/deleteAll")
     public ResponseEntity deleteAll() {

@@ -1,6 +1,5 @@
 package com.proiect.RestaurantTurcesc.controller;
 
-import com.proiect.RestaurantTurcesc.entities.Category;
 import com.proiect.RestaurantTurcesc.helpers.MapEntities;
 import com.proiect.RestaurantTurcesc.models.category.CategoryResponse;
 import com.proiect.RestaurantTurcesc.service.category.CategoryService;

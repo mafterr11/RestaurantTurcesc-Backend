@@ -18,7 +18,6 @@ public class MapEntities {
         user.setEmail(userRequest.getEmail());
         user.setFirstName(userRequest.getFirstName());
         user.setLastName(userRequest.getLastName());
-//        user.setOrders(userRequest.getOrders());
         return user;
     }
 
@@ -28,7 +27,6 @@ public class MapEntities {
         userResponse.setEmail(user.getEmail());
         userResponse.setFirstName(user.getFirstName());
         userResponse.setLastName(user.getLastName());
-//        userResponse.setOrders(user.getOrders());
         return userResponse;
     }
 
@@ -38,7 +36,6 @@ public class MapEntities {
         user.setEmail(userResponse.getEmail());
         user.setFirstName(userResponse.getFirstName());
         user.setLastName(userResponse.getLastName());
-//        user.setOrders(userResponse.getOrders());
         return user;
     }
 

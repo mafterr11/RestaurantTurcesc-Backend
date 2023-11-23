@@ -3,7 +3,6 @@ package com.proiect.RestaurantTurcesc;
 import com.proiect.RestaurantTurcesc.entities.Category;
 import com.proiect.RestaurantTurcesc.entities.Product;
 import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
-import com.proiect.RestaurantTurcesc.models.product.ProductResponse;
 import com.proiect.RestaurantTurcesc.repository.CategoryRepository;
 import com.proiect.RestaurantTurcesc.repository.ProductsRepository;
 import lombok.RequiredArgsConstructor;

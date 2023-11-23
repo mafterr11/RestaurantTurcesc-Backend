@@ -1,6 +1,5 @@
 package com.proiect.RestaurantTurcesc.entities;
 
-import com.proiect.RestaurantTurcesc.helpers.CategoryEnum;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,7 +14,6 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
-//    @Enumerated(EnumType.STRING)
     @Column(name = "category", columnDefinition = "TEXT", updatable = true, nullable = false)
     private String category;
 }
