@@ -8,7 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-
+//Datele de la server la client
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

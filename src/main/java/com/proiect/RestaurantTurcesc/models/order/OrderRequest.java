@@ -2,7 +2,7 @@ package com.proiect.RestaurantTurcesc.models.order;
 
 import com.proiect.RestaurantTurcesc.helpers.Status;
 import lombok.*;
-
+//Datele de la client la server
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
