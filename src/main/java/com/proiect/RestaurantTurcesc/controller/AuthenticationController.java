@@ -4,6 +4,7 @@ import com.proiect.RestaurantTurcesc.models.security.AuthenticationResponse;
 import com.proiect.RestaurantTurcesc.models.security.LoginRequest;
 import com.proiect.RestaurantTurcesc.models.security.RegisterRequest;
 import com.proiect.RestaurantTurcesc.service.security.AuthenticationService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,6 +17,7 @@ public class AuthenticationController {
 
     private final AuthenticationService authenticationService;
 
+    @Autowired
     public AuthenticationController(AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
     }

@@ -3,6 +3,7 @@ package com.proiect.RestaurantTurcesc.controller;
 import com.proiect.RestaurantTurcesc.helpers.MapEntities;
 import com.proiect.RestaurantTurcesc.models.category.CategoryResponse;
 import com.proiect.RestaurantTurcesc.service.category.CategoryService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,12 +18,13 @@ public class CategoryController {
 
     private final CategoryService categoryService;
 
+    @Autowired
     public CategoryController(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
 
     @GetMapping("/findAll")
-    public ResponseEntity<List<CategoryResponse>> findAll(){
-       return new ResponseEntity<>(this.categoryService.findAll().stream().map(c-> MapEntities.mapCategoryToCategoryResponse(c)).toList(), HttpStatus.OK);
+    public ResponseEntity<List<CategoryResponse>> findAll() {
+        return new ResponseEntity<>(this.categoryService.findAll().stream().map(c -> MapEntities.mapCategoryToCategoryResponse(c)).toList(), HttpStatus.OK);
     }
 }
